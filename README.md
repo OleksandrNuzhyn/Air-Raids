@@ -8,7 +8,7 @@ The program runs as a chained forecast: it first predicts the silence duration, 
 
 ## Machine Learning Models
 
-We use the Random Forest Regressor algorithm. The target variables are log-transformed during training to handle extreme values.
+The project uses the Random Forest Regressor algorithm. The target variables are log-transformed during training to handle extreme values.
 
 ### Model 1: Silence Duration Prediction
 * Goal: Predict the hours of peace (silence) after an alert ends.
@@ -19,7 +19,7 @@ We use the Random Forest Regressor algorithm. The target variables are log-trans
 * Features: Durations of the last two alerts and silences (including the predicted silence from Model 1), the predicted start hour, day of the week, month of the alert, and the region (one-hot encoded).
 
 ### Metrics
-We use Mean Absolute Error (MAE) calculated individually for each region. You can check the results in these plots:
+Mean Absolute Error (MAE) is calculated individually for each region. You can check the results in these plots:
 * [Silence Prediction Error by Region](mae_silence_by_oblast.png)
 * [Alert Duration Prediction Error by Region](mae_duration_by_oblast.png)
 
@@ -40,7 +40,7 @@ We use Mean Absolute Error (MAE) calculated individually for each region. You ca
 
 ## Example Output
 
-When you run the program and select a region (e.g., Kyiv), it shows:
+When you run the program and select a region (e.g, Kyiv), it shows:
 
 ```
 Selected region: Kyiv
