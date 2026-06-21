@@ -1,0 +1,11 @@
+# Дані
+official_data_uk.csv
+prepared_silence_data.csv
+prepared_duration_data.csv
+
+# Навчені моделі
+*.joblib
+
+# Python
+.venv/
+__pycache__/
